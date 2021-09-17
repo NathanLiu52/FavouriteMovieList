@@ -17,7 +17,7 @@ const App = () => {
     {name:"John Carney"},
     {name:"Patty Jenkins"},
     {name:"Travis Fine"},
-    {name:"Amy Poehier"},
+    {name:"Amy Poehler"},
     {name:"David Ayer"},
     {name:"Zack Snyder"},
     {name:"Pete Docter"},
@@ -49,9 +49,7 @@ const App = () => {
   const ratingConversion = (rowData) => {
     const newRating = (rowData.rating / 5) * 100 + ".00%";
     return (
-      <div>
-          {newRating}
-      </div>
+      <div>{newRating}</div>
     );
   }
 
@@ -98,6 +96,10 @@ const App = () => {
     <span className="movieDetails">Movie Details</span>
   );
 
+  const ratingFilter = (rowData) => {
+    return (rowData.rating / 5 * 100 + ".00%");
+  }
+
   return (
     <div>
       <h1 className="title">Favourite Movie List</h1>
@@ -111,7 +113,7 @@ const App = () => {
           <Column field="length" header="Running Time" filter filterPlaceholder="Search by time"></Column>
           <Column field="director" header="Director" filter filterElement={directorFilter}></Column>
           <Column field="certification" header="Certification" body={viewingAgeTemplate} filter filterElement={statusFilter}></Column>
-          <Column field="rating" header="Rating" body={ratingConversion} filter filterPlaceholder="Search by rating"></Column>
+          <Column field="rating" header="Rating" body={ratingConversion} filter filterPlaceholder="Search by rating" filterField={ratingFilter}></Column>
         </DataTable>
 
         <Sidebar className="p-sidebar-md" visible={visibleRight} position="right" onHide={onHideHelper} icons={customIcons}>
