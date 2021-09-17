@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: 'Libre Baskerville', serif;
+  background-color: #E6E6E9;
+}
+
+h1, h3 {
+  font-family: 'Lora', serif;
+  text-align: center;
+  margin: 0;
+}
+
+h3 {
+  margin-top: 5px;
+}
+
+.title {
+  color: #636366; 
+  font-size: 3em;
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+
+.general {
+  background-color: #C8E6C9;
+  color: #2a602c;
+  border-radius: 2px;
+  padding: .25em .5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: .3px;
+  display: inline;
+}
+
+.CA-PG {
+  background-color: #FEEDAF;
+  color: #8a6a19;
+  border-radius: 2px;
+  padding: .25em .5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: .3px;
+  display: inline;
+}
+
+.accompaniment {
+  background-color: #FFCDD2;
+  color: #a31545;
+  border-radius: 2px;
+  padding: .25em .5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: .3px;
+  display: inline;
+  white-space: nowrap;
+}
+
+.popupContainer {
+  background-color: #88a2aa;
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  padding: 1em;
+  border-radius: 5px;
+  margin: 0.5em;
+}
+
+#cast, #genre {
+  border-radius: 25px;
+  padding: .25em .5rem;
+  background-color: #e9ece9;
+  display: inline-block;
+  font-size: 0.75em;
+  margin: 5px;
+}
+
+#plot {
+  font-size: 0.7em;
+  display: block;
+  margin-top: 0.5em;
+}
+
+.p-sidebar-md {
+  height: 100%;
+  max-height: 70%;
+  min-height: 70%;
+  margin-top: 10em;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.footer {
+  position: sticky;
+  background-color: white;
+  bottom: -1em;
+  padding-left: 17em;
+  padding-bottom: 1em;
+}
+
+.movieDetails {
+  position: absolute;
+  left: 1.2em;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#datatable {
+  padding: 0 5em 0 5em;
+}
